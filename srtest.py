@@ -12,8 +12,8 @@ Domain = input ("Enter a URL:")
 # API Calls
 URL = 'https://api.semrush.com/?type=domain_ranks&export_columns=Db,Dn,Rk,Or,Ot,Oc,Ad,At,Ac,Sv,Sh&domain=' + Domain + '&key=' + SEM_Rush_API_key
 URL2 = 'https://api.semrush.com/?type=domain_adwords&display_limit=10&export_columns=Ph,Po,Pp,Pd,Nq,Cp,Vu,Tr,Tc,Co,Nr,Td&domain=' + Domain +'&database=us' + '&key=' + SEM_Rush_API_key
-URL3 = 'https://api.semrush.com/?type=domain_organic&display_filter=%2B%7CPh%7CCo%7Cseo&display_limit=10&export_columns=Ph,Po,Pp,Pd,Nq,Cp,Ur,Tr,Tc,Co,Nr,Td&domain=' + Domain + + '&key=' + SEM_Rush_API_key + '&database=us'
-URL4 = 'https://api.semrush.com/?type=url_organic&display_limit=10&export_columns=Ph,Po,Nq,Cp,Co,Tr,Tc,Nr,Td&url=' + Domain +'&database=us' + '&key=' + SEM_Rush_API_key
+URL3 = 'https://api.semrush.com/?type=domain_organic&display_filter=%2B%7CPh%7CCo%7Cseo&display_limit=10&export_columns=Ph,Po,Pp,Pd,Nq,Cp,Ur,Tr,Tc,Co,Nr,Td&domain=' + Domain + '&key=' + SEM_Rush_API_key + '&database=us'
+URL4 = 'https://api.semrush.com/?type=url_organic&display_limit=10&export_columns=Ph,Po,Nq,Cp,Co,Tr,Tc,Nr,Td&url=' + Domain + '&database=us' + '&key=' + SEM_Rush_API_key
 
 # Requests
 r = requests.get(URL)
